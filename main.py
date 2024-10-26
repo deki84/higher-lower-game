@@ -27,6 +27,8 @@ while game_continue:
 
     account_a = account_b
     account_b = random.choice(data)
+    while account_a == account_b:  
+        account_b = random.choice(data)
 
     if account_a == account_b:
         account_b = random.choice(data)
